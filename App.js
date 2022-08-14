@@ -8,7 +8,7 @@ import Feed from './pages/TelaFeed';
 import Pesquisa from './pages/TelaPesquisa';
 import Notificaçao from './pages/TelaNotificação'
 import Perfil from './pages/TelaPerfil';
-
+import Tabs from './pages/tabs';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,16 +20,11 @@ export default function App() {
 
     <NavigationContainer>
 
-
-
       <Stack.Navigator screenOptions= { {headerShown: false}}
         initialRouteName = "Login">
         <Stack.Screen name = "Login" component = {Login}/>
         <Stack.Screen name = "Cadastro" component = {Cadastro}/>
-        <Stack.Screen name = "Feed" component = {Feed}/>
-        <Stack.Screen name = "Pesquisa" component = {Pesquisa}/>
-        <Stack.Screen name = "Notificaçao" component = {Notificaçao}/>
-        <Stack.Screen name = "Perfil" component = {Perfil}/>
+        <Stack.Screen name = "Tabs" component = {Tabs}/>
 
       </Stack.Navigator>
 

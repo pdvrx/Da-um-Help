@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, TextInput, Pressable, Image } from 'react-native';
 import { Dimensions } from 'react-native';
+import { Linking } from 'react-native';
+
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -24,6 +26,11 @@ export default function TelaLogin({navigation}) {
           <Text style={styles.btnTxtFb}>Logar com o Facebook</Text>
         </Pressable>
 
+        <Text style={{color: 'purple', marginTop: 20}}
+          onPress={() => Linking.openURL('http://google.com')}>Se cadastre como Ong
+        </Text>
+        
+
     </View>
   );
 }
@@ -37,11 +44,11 @@ const styles = StyleSheet.create({
     textAlign:'center',
     backgroundColor:'E5E5E5',
     padding:10,
-    backgroundColor:'white',
 
   },
 
   logo:{
+    marginTop:-90,
     height:250,
     width:250,
     marginBottom:35
