@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, TextInput, Pressable, Image } from 'react-native';
+import { Dimensions } from 'react-native';
 
-
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
 
 export default function TelaLogin({navigation}) {
 
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
     backgroundColor:'E5E5E5',
     padding:10,
     backgroundColor:'white',
-    height: 850
+
   },
 
   logo:{

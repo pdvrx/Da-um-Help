@@ -58,7 +58,7 @@ export default function TelaCadastro({navigation}) {
 
 
 
-        <Pressable style={styles.btnCadastro} onPress={()=>navigation.navigate("Tabs")}>
+        <Pressable style={styles.btnCadastro} onPress={()=>navigation.navigate("Feed")}>
           <Text style={styles.btnTxt}>Cadastra-se</Text>
         </Pressable>
 
@@ -78,7 +78,6 @@ const styles = StyleSheet.create({
     textAlign:'center',
     backgroundColor:'E5E5E5',
     padding:10,
-    height:850,
     backgroundColor:'white'
   },
 
@@ -95,7 +94,7 @@ const styles = StyleSheet.create({
   },
 
   logo:{
-    marginTop:-60,
+
     height:250,
     width:250,
     marginBottom:30
