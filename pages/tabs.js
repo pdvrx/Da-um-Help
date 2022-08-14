@@ -5,6 +5,8 @@ import Feed from './TelaFeed';
 import Pesquisa from './TelaPesquisa';
 import Notificaçao from './TelaNotificação'
 import Perfil from './TelaPerfil';
+import Icon from 'react-native-vector-icons/FontAwesome'
+
 
 const  Tab = createBottomTabNavigator();
 
@@ -18,12 +20,37 @@ const Tabs = () =>{
                 position: 'absolute',
                 height: 60,
                 ...style.shadow
-            }
+            },
+            tabBarActiveTintColor: 'red'
         }}>
-            <Tab.Screen name="Feed" component={Feed}/>
-            <Tab.Screen name="Pesquisa" component={Pesquisa}/>
-            <Tab.Screen name="Notificaçao" component={Notificaçao}/>
-            <Tab.Screen name="Perfil" component={Perfil}/>
+            <Tab.Screen name="Feed" component={Feed}
+                options={{
+                    tabBarIcon: ({color,size}) => (
+                        <Icon name="github" size={30} color="green" />
+                    )
+                }}
+            />
+            <Tab.Screen name="Pesquisa" component={Pesquisa}
+                    options={{
+                        tabBarIcon: ({color,size}) => (
+                            <Icon name="github" size={30} color="green" />
+                    )
+             }}
+            />
+            <Tab.Screen name="Notificaçao" component={Notificaçao}
+                    options={{
+                        tabBarIcon: ({color,size}) => (
+                            <Icon name="github" size={30} color="green" />
+                    )
+            }}
+            />
+            <Tab.Screen name="Perfil" component={Perfil}
+                    options={{
+                        tabBarIcon: ({color,size}) => (
+                            <Icon name="github" size={30} color="green" />
+                    )
+            }}
+            />
         </Tab.Navigator>
     );
 
