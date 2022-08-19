@@ -1,11 +1,15 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, Image } from 'react-native';
 
 
 export default function App() {
 
     return(
       <View style={styles.center}>
+
+        <View style={styles.topTypo}>
+        <Image source={require('../assets/typo.png')}/>
+        </View>
         <Text> Feed </Text>
       </View>
     );
@@ -23,6 +27,10 @@ const styles = StyleSheet.create({
     backgroundColor:'E5E5E5',
     padding:10,
   },
+
+  topTypo:{
+    backgroundColor:'#38C7A5'
+  }
 
  
   });

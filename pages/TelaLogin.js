@@ -27,7 +27,7 @@ export default function TelaLogin({navigation}) {
         </Pressable>
 
         <Text style={{color: 'purple', marginTop: 20}}
-          onPress={() => Linking.openURL('http://google.com')}>Se cadastre como Ong
+          onPress={()=>navigation.navigate("Cadastro")}>Se cadastre como Ong
         </Text>
         
 
