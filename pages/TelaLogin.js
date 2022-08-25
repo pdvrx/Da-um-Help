@@ -15,6 +15,7 @@ export default function TelaLogin({navigation}) {
 
         <Image style={styles.logo} source={require('../assets/logo.png')}/>
         <Text style={styles.tit}> Bem vindo ao Da um Help </Text>
+       
         <Text style={styles.txt}> Somos um portal para facilitar na comunicaçãoentre pessoas dispostas a fazer o bem assim como você, e organizações que precisam do nosso apoio para continuar com seus incríveis projetos! </Text>
         <Pressable style={styles.btnCadastro} onPress={()=>navigation.navigate("Cadastro")}>
           <Text style={styles.btnTxt}>Cadastra-se</Text>
@@ -27,7 +28,7 @@ export default function TelaLogin({navigation}) {
         </Pressable>
 
         <Text style={{color: 'purple', marginTop: 20}}
-          onPress={()=>navigation.navigate("Cadastro")}>Se cadastre como Ong
+          onPress={()=>navigation.navigate("CadastroOrg")}>Se cadastre como Ong
         </Text>
         
 

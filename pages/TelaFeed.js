@@ -1,15 +1,13 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
+import Topbar from '../components/TopBar';
 
 
-export default function App() {
+export default function TelaFeed() {
 
     return(
       <View style={styles.center}>
-
-        <View style={styles.topTypo}>
-        <Image source={require('../assets/typo.png')}/>
-        </View>
+        <Topbar/>
         <Text> Feed </Text>
       </View>
     );
@@ -27,10 +25,5 @@ const styles = StyleSheet.create({
     backgroundColor:'E5E5E5',
     padding:10,
   },
-
-  topTypo:{
-    backgroundColor:'#38C7A5'
-  }
-
  
   });

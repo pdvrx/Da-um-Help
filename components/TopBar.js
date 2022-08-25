@@ -1,47 +1,48 @@
 import * as React from 'react';
-import { Image, Text, StyleSheet, View, Pressable} from 'react-native';
+import { Text, View, StyleSheet, Image } from 'react-native';
+
 
 export default function TopBar() {
-  return (
-    <View style={styles.position}>
-      <Pressable style={styles.btn}>
 
-          <View style={styles.barra} >
-          <Image style={styles.foto} source={require('../assets/typoWhite.png')}/>
-          </View>
+    return(
+      <View style={styles.center}>
 
-      </Pressable>
-     </View>
+        <View style={styles.topTypo}>
+        <Image style={styles.imgTypo} source={require('../assets/typo.png')}/>
+        </View>
+        <Text> Feed </Text>
+      </View>
     );
-  }
- 
 
+
+}
 
 const styles = StyleSheet.create({
-
-  foto:{
-
-    padding:'20px',
-    width:'130px',
-    height:'30px',
-    borderRadius:'8px'
-  },
-
-  barra:{
-    backgroundColor:'#38C7A5',
-    width:'100vw',
+  center:{
+    display:'flex',
     alignItems:'center',
-    shadowColor: '#171717',
-    shadowOffset: {width: 0, height: 4},
-    shadowOpacity: 0.2,
-    shadowRadius: 3.5,
+    justifyContent:'center',
+    flexDirection:'column',
+    textAlign:'center',
+    backgroundColor:'E5E5E5',
+    padding:10,
   },
 
-  position:{
+  topTypo:{
     position:'absolute',
     zIndex:1,
-    top:'0%'
+    top:'0%',
+    backgroundColor:'#38C7A5',
+    width: "110%",
+    alignItems:"center",
+    padding: 7
+  },
+
+  imgTypo:{
+    width:130,
+    height:30,
+    
   }
 
-
-});
+ 
+  });
