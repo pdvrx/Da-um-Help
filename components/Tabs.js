@@ -17,29 +17,24 @@ export default function MyTabs() {
       initialRouteName="Feed"
       tabBarOptions={{
         scrollEnabled: true,
-        showLabel: false,
 
       }}
 
       screenOptions={{  
+        showLabel: false,
         tabBarStyle: { 
           position: 'absolute',
-          borderRadius:'5px',
+          borderRadius:5,
           elevation:0,
           backgroundColor:'#FFFF',
-          shadowColor: '#171717',
-          shadowOffset: {width: 1, height: -3},
-          shadowOpacity: 0.3,
-          shadowRadius: 3,
         },    
         tabBarActiveTintColor: '#60D2B7',
         tabBarInactiveTintColor:'#545454',
         headerShown: false,
       }}
     >
-      <Tab.Screen name="Feed" component={Feed}
+<Tab.Screen name="Feed" component={Feed}
         options={{
-          tabBarLabel: 'Home',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={33} />
           ),
