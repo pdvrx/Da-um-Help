@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 import Topbar from '../components/TopBar';
 
-
 export default function TelaFeed() {
 
     return(

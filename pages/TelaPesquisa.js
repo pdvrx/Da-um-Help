@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-
+import Icon from 'react-native-vector-icons/Feather';
 
 export default function App() {
 
@@ -8,6 +8,7 @@ export default function App() {
       <View style={styles.center}>
         <Text> Pesquisa </Text>
       </View>
+      
     );
 
 
