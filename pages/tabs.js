@@ -5,7 +5,7 @@ import Feed from './TelaFeed';
 import Pesquisa from './TelaPesquisa';
 import Notificaçao from './TelaNotificação'
 import Perfil from './TelaPerfil';
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/Ionicons'
 
 
 const  Tab = createBottomTabNavigator();
@@ -25,30 +25,46 @@ const Tabs = () =>{
         }}>
             <Tab.Screen name="Feed" component={Feed}
                 options={{
-                    tabBarIcon: ({color,size}) => (
-                        <Icon name="github" size={30} color="green" />
-                    )
+                    tabBarIcon: ({color,size,focused}) => {
+                        if(focused){
+                           return <Icon name="home" size={size} color="blue" />
+                        }
+
+                        return <Icon name="home-outline" size={size} color="red" />
+                    }
                 }}
             />
             <Tab.Screen name="Pesquisa" component={Pesquisa}
                     options={{
-                        tabBarIcon: ({color,size}) => (
-                            <Icon name="github" size={30} color="green" />
-                    )
+                        tabBarIcon: ({color,size,focused}) => {
+                            if(focused){
+                               return <Icon name="home" size={size} color="blue" />
+                            }
+    
+                            return <Icon name="home" size={size} color="red" />
+                        }
              }}
             />
             <Tab.Screen name="Notificaçao" component={Notificaçao}
                     options={{
-                        tabBarIcon: ({color,size}) => (
-                            <Icon name="github" size={30} color="green" />
-                    )
+                        tabBarIcon: ({color,size,focused}) => {
+                            if(focused){
+                               return <Icon name="home" size={size} color="blue" />
+                            }
+    
+                            return <Icon name="home" size={size} color="red" />
+                        }
             }}
             />
             <Tab.Screen name="Perfil" component={Perfil}
                     options={{
-                        tabBarIcon: ({color,size}) => (
-                            <Icon name="github" size={30} color="green" />
-                    )
+                        tabBarIcon: ({color,size,focused}) => {
+                            if(focused){
+                               return <Icon name="home" size={size} color="blue" />
+                            }
+    
+                            return <Icon name="home" size={size} color="red" />
+                        }
             }}
             />
         </Tab.Navigator>
