@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-
+import Topbar from '../components/TopBar';
 
 export default function App() {
 
     return(
       <View style={styles.center}>
+        <Topbar/>
         <Text> Doador </Text>
       </View>
     );

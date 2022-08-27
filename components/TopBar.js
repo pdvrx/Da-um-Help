@@ -31,9 +31,9 @@ const styles = StyleSheet.create({
   topTypo:{
     position:'absolute',
     zIndex:1,
-    top:'0%',
+    top:-11,
     backgroundColor:'#38C7A5',
-    width: "110%",
+    width: "1500%",
     alignItems:"center",
     padding: 7
   },

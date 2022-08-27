@@ -27,10 +27,10 @@ const Tabs = () =>{
                 options={{
                     tabBarIcon: ({color,size,focused}) => {
                         if(focused){
-                           return <Icon name="home" size={size} color="blue" />
+                           return <Icon name="home" size={size} color="#38C7A5" />
                         }
 
-                        return <Icon name="home-outline" size={size} color="red" />
+                        return <Icon name="home-outline" size={size} color="#A9A9A9" />
                     }
                 }}
             />
@@ -38,10 +38,10 @@ const Tabs = () =>{
                     options={{
                         tabBarIcon: ({color,size,focused}) => {
                             if(focused){
-                               return <Icon name="home" size={size} color="blue" />
+                               return <Icon name="search" size={size} color="#38C7A5" />
                             }
     
-                            return <Icon name="home" size={size} color="red" />
+                            return <Icon name="search-outline" size={size} color="#A9A9A9" />
                         }
              }}
             />
@@ -49,10 +49,10 @@ const Tabs = () =>{
                     options={{
                         tabBarIcon: ({color,size,focused}) => {
                             if(focused){
-                               return <Icon name="home" size={size} color="blue" />
+                               return <Icon name="notifications" size={size} color="#38C7A5" />
                             }
     
-                            return <Icon name="home" size={size} color="red" />
+                            return <Icon name="notifications-outline" size={size} color="#A9A9A9" />
                         }
             }}
             />
@@ -60,10 +60,10 @@ const Tabs = () =>{
                     options={{
                         tabBarIcon: ({color,size,focused}) => {
                             if(focused){
-                               return <Icon name="home" size={size} color="blue" />
+                               return <Icon name="person" size={size} color="#38C7A5" />
                             }
     
-                            return <Icon name="home" size={size} color="red" />
+                            return <Icon name="person-outline" size={size} color="#A9A9A9" />
                         }
             }}
             />
