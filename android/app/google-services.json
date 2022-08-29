@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "122371772013",
+    "project_id": "da-um-help-df990",
+    "storage_bucket": "da-um-help-df990.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122371772013:android:ad5d8de3a3deebeab8f964",
+        "android_client_info": {
+          "package_name": "com.da_um_help"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122371772013-1grshh3e5gi6lq4a5t9bvmg3r4uc6luc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtzsv_EQelLNOpznMfkrUWP824yLkkLwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122371772013-1grshh3e5gi6lq4a5t9bvmg3r4uc6luc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
